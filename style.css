@@ -1,0 +1,17 @@
+/* style.css */
+body {
+  background-color : burlywood ;
+  font-family: sans-serif;
+}
+
+h1{
+  color : cornflowerblue ;
+}
+p{
+  color : cornflowerblue ;
+}
+textarea {
+  width: 300px;
+  height: 100px;
+}
+
