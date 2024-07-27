@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Envoyer un message à Telegram</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Envoyer un message anonyme</title>
+  <style>
+    /* Style CSS basique pour le formulaire */
+    body {
+      font-family: sans-serif;
+    }
+    form {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Envoyer un message</h1>
-  <p>MESSANGE ANONYME</p>
-  <textarea id="message" placeholder="Entrez votre message"></textarea>
-  <button id="envoyer">Envoyer</button>
 
-  <script src="script.js"></script>
+  <h1>Envoyer un message Anonyme</h1>
+
+  <form action="send_message.php" method="post">
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="40"></textarea><br>
+    <input type="submit" value="Envoyer">
+  </form>
+
 </body>
 </html>
